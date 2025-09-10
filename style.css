@@ -149,7 +149,7 @@ button{
 
 
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 720px) {
   header {
    
     display: none;
@@ -259,7 +259,6 @@ button{
   
   }
 }
-
 
 
 
