@@ -112,7 +112,7 @@ text-align: justify;
 
 
 #btn_container{
-    width: 50%;
+    width: 30%;
      margin-left: 230px;
      display: flex; 
      
@@ -137,7 +137,7 @@ button{
 #img_container{
     width: 50%;
     display: flex;
-    margin-left: 67%;
+    margin-left: 37%;
     margin-top: -3%;
   
 }
@@ -260,6 +260,7 @@ button{
   
   }
 }
+
 
 
 
