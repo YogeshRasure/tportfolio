@@ -1,130 +1,79 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg,rgb(51, 62, 108) 0%, rgb(20 14, 34) 0%, rgb(35, 52, 118) 100%, rgba(3, 7, 8, 0.958) 100%);
+    background: linear-gradient(90deg, rgb(51, 62, 108) 0%, rgb(20, 14, 34) 0%, rgb(35, 52, 118) 100%, rgba(3, 7, 8, 0.958) 100%);
 }
-header{
+
+header {
     align-items: center;
     font-size: 25px;
     margin-top: 2px;
     height: 60px;
-    
     background-color: rgba(8, 29, 52, 0.778);
     border-radius: 5px;
     border: 2px solid rgb(21, 20, 20);
     box-shadow: 2px 2px 10px white;
+    display: flex;
+    justify-content: space-between;
 }
-#hName{
+
+#hName {
     width: 40%;
     color: rgb(242, 163, 79);
     padding-left: 12px;
-    
 }
-nav{
+
+nav {
     width: 60%;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
-   
-   
 }
-nav ,a{
+
+nav a {
     text-decoration: none;
     color: rgb(159, 235, 234);
 }
 
-#parent{
+#parent {
     margin-top: 7%;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
-@media only screen and (max-width: 380px) {
-  /* Styles for small to large phones */
- 
- #parent {
-   margin-top: 10%;
-   margin-left: -10%;
-   display:flex;
-   flex-direction: column;
-   
-
-   position: relative;
-  
-  }
+#information {
+    font-size: 22px;
+    line-height: 40px;
+    margin-left: 80px;
+    text-align: justify;
+    animation: about-animation 3s 1;
 }
-
-#information{
-font-size: 22px;
-line-height: 40px;
-margin-left: 80px;
-text-align: justify;
-  animation-duration: 3s;
-
-
-  animation: about-animation 3s;
-  
-   animation-iteration-count: 1;
-}
-
-@media only screen and (max-width: 680px) {
-  /* Styles for small to large phones */
- 
- #information{
-   margin-top: 34%;
-    margin-left: 10%; 
-   width: 100%;
-   position: relative;
-    animation:none;
-  
-  }
-}
-
 
 @keyframes about-animation {
-  0% {
-    transform: scaleY(2);
-  }
-  100% {
-    transform: scaleY(1);
-  }
+    0% {
+        transform: scaleY(2);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
-
-
-#profilePic{
+#profilePic {
     width: 45%;
-
     padding-left: 370px;
-    animation:  zoomInZoomOut 5s forwards;
-  animation-duration: 3.2s ;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+    animation: zoomInZoomOut 3.2s ease-in-out forwards;
 }
-
 
 @keyframes zoomInZoomOut {
-  0% {
-    transform: scale(0);
-  }
-  
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-
-@media only screen and (max-width: 680px) {
-  /* Styles for small to large phones */
- 
- #profilePic {
-   margin-top: -5%;
-   margin-left: -8%;
-   animation:none;
-   position: relative;
-  
-  }
-}
-
-#img{
+#img {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -133,55 +82,20 @@ text-align: justify;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-
-#btn{
-    
+#btn {
     margin-top: -20px;
     display: flex;
 }
 
-@media only screen and (max-width: 680px) {
-  /* Styles for small to large phones */
- 
- #btn {
-   margin-top: 70%;
-   margin-left: 15%;
-   /* animation:none;
-   position: absolute; */
-   /* display: flex;
-   flex-direction: column; */
-  
-  }
-}
-
-#btn_container{
+#btn_container {
     width: 50%;
-     margin-left: 230px;
-     display: flex; 
+    margin-left: 230px;
+    display: flex;
 }
 
-
-@media only screen and (max-width: 380px) {
-  /* Styles for small to large phones */
- 
- #btn_container {
-   
-   /* margin-left: 100%; */
-   /* margin-top: -40%; */
-   width: 100%;
-   position:relative;
-   
-  
-  }
-}
-
-
-
-button{
-    
+button {
     width: fit-content;
     font-size: 20px;
     font-weight: bold;
@@ -190,96 +104,91 @@ button{
     border: 5px solid skyblue;
 }
 
-#img_container{
+#img_container {
     width: 50%;
     display: flex;
     margin-left: 300px;
-  
 }
 
+#liin {}
 
-@media only screen and (max-width: 380px) {
-  /* Styles for small to large phones */
- 
- #img_container {
-   
-   display: none;
-   
-  
-  }
-}
-
-#liin{
-   
-    
-} 
-
-.simg{
+.simg {
     width: 55px;
-     padding-left: 40px;
+    padding-left: 40px;
 }
 
+/* 📱 Grouped Mobile Styles */
+@media screen and (max-width: 480px) {
+    #parent {
+        margin-top: 10%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 
+    #information {
+        margin-top: 34%;
+        margin-left: 10%;
+        width: 90%;
+        position: relative;
+        animation: none;
+    }
 
-@media only screen and (max-width: 680px) {
-  /* Styles for small to large phones */
- 
- footer {
-   height: 20%;
-   width:100%;
-   margin-top: 62%;
-   background-color: red;
-   border-top-left-radius: 100%;
-   border-top-right-radius:100% ;
-   position:relative;
-  
-  }
+    #profilePic {
+        margin-top: 5%;
+        margin-left: 0;
+        animation: none;
+        position: relative;
+    }
+
+    #btn {
+        margin-top: 70%;
+        margin-left: 15%;
+    }
+
+    #btn_container {
+        width: 100%;
+        position: relative;
+        margin-left: 0;
+    }
+
+    #img_container {
+        display: none;
+    }
+
+    footer {
+        height: 20%;
+        width: 100%;
+        margin-top: 62%;
+        background-color: red;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%;
+        position: relative;
+    }
+
+    .mimg {
+        height: 50px;
+        width: 50px;
+        margin-left: 35px;
+    }
+
+    #mobile_res {
+        margin-left: 35%;
+        margin-top: 16%;
+    }
+
+    #by {
+        margin-left: 33%;
+        margin-top: 10%;
+        font-size: 22px;
+        font-weight: bold;
+    }
 }
-@media only screen and (max-width: 380px) {
-  /* Styles for small to large phones */
- 
- .mimg {
-   height: 50px;
-   width: 50px;
-   margin-left: 35px;
-  
-  }
+
+/* 💻 Hide footer on large screens */
+@media screen and (min-width: 800px) {
+    footer {
+        display: none;
+    }
 }
-@media only screen and (max-width: 680px) {
-  /* Styles for small to large phones */
- 
-#mobile_res{
-   margin-left: 35%;
-   margin-top: 16%;
-
-  
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  /* Styles for small to large phones */
- 
-#by{
-   margin-left: 33%;
-   margin-top: 10%;
-   font-size: 22px;
-   font-weight: bold;
-  
-  }
-}
-
-
-
-@media only screen and (min-width:800px) {
-  /* Styles for small to large phones */
- 
- footer {
-   display: none
-
-  
-  }
-}
-
-
-
-
