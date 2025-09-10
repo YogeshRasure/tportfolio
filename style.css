@@ -37,7 +37,7 @@ nav ,a{
     align-items: center;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Styles for small to large phones */
  
  #parent {
@@ -65,7 +65,7 @@ text-align: justify;
    animation-iteration-count: 1;
 }
 
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   /* Styles for small to large phones */
  
  #information{
@@ -112,7 +112,7 @@ text-align: justify;
 }
 
 
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   /* Styles for small to large phones */
  
  #profilePic {
@@ -143,7 +143,7 @@ text-align: justify;
     display: flex;
 }
 
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   /* Styles for small to large phones */
  
  #btn {
@@ -164,7 +164,7 @@ text-align: justify;
 }
 
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Styles for small to large phones */
  
  #btn_container {
@@ -198,7 +198,7 @@ button{
 }
 
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Styles for small to large phones */
  
  #img_container {
@@ -221,7 +221,7 @@ button{
 
 
 
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   /* Styles for small to large phones */
  
  footer {
@@ -231,11 +231,11 @@ button{
    background-color: red;
    border-top-left-radius: 100%;
    border-top-right-radius:100% ;
-   position: absolute;
+   position:absolute;
   
   }
 }
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Styles for small to large phones */
  
  .mimg {
@@ -245,7 +245,7 @@ button{
   
   }
 }
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   /* Styles for small to large phones */
  
 #mobile_res{
@@ -256,7 +256,7 @@ button{
   }
 }
 
-@media screen and (max-width: 680px) {
+@media only screen and (max-width: 680px) {
   /* Styles for small to large phones */
  
 #by{
@@ -270,7 +270,7 @@ button{
 
 
 
-@media screen and (min-width:800px) {
+@media only screen and (min-width:800px) {
   /* Styles for small to large phones */
  
  footer {
@@ -279,4 +279,5 @@ button{
   
   }
 }
+
 
