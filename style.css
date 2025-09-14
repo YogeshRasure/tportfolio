@@ -1,3 +1,4 @@
+/* Reset and body background */
 body {
   margin: 0;
   padding: 0;
@@ -10,12 +11,12 @@ body {
   );
 }
 
-
+/* Desktop Header */
 header {
   align-items: center;
   font-size: 25px;
   margin-top: 2px;
-  height: 60rem;
+  height: 60px;
   display: flex;
   background-color: rgba(8, 29, 52, 0.778);
   border-radius: 5px;
@@ -51,7 +52,7 @@ nav a {
 #information {
   font-size: 30px;
   line-height: 40px;
-  margin-left: 80rem;
+  margin-left: 80px;
   text-align: justify;
   animation: about-animation 3s 1;
 }
@@ -65,9 +66,10 @@ nav a {
   }
 }
 
+/* Profile picture animations */
 #profilePic {
   width: 45%;
-  padding-left: 370rem;
+  padding-left: 370px;
   animation: zoomInZoomOut 3.2s ease-in-out 1;
 }
 
@@ -80,7 +82,7 @@ nav a {
   }
 }
 
-
+/* Profile image styling */
 #img {
   height: 300px;
   width: 300px;
@@ -95,7 +97,7 @@ nav a {
 /* Button sections */
 #btn {
   width: 100%;
-  margin-top: -20rem;
+  margin-top: -20px;
   display: flex;
 }
 
@@ -117,11 +119,11 @@ button {
 
 
 
-
+/* Desktop Footer */
 footer {
   height: 100%;
   width:97.5%;
-  background-color: red;
+  background-color: rgba(0, 238, 255, 0.475);
   margin-top: 7.2%;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -136,9 +138,9 @@ footer {
   height: 50px;
 }
 
-
+/* NEW: Mobile Menu Icon */
 #mobile-menu {
-  display: none;
+  display: none; /* hidden by default */
   padding: 10px;
   color: white;
   font-size: 24px;
@@ -148,7 +150,7 @@ footer {
 }
 
 
-/*  Media Query for: Mobile  */
+/* k Media Query: Mobile  */
 
 @media screen and (max-width: 720px) {
   /* Hide desktop header and footer */
@@ -157,7 +159,7 @@ footer {
     display: none;
   }
 
-
+  /* Show mobile menu icon */
   #mobile-menu {
     display: block;
   }
@@ -186,14 +188,16 @@ footer {
   #img {
     height: 200px;
     width: 200px;
-    border-radius: 50%; 
+    border-radius: 50%; /* Optional: adds a circular look */
   }
 
   #information {
-    width: 90%;
+    width: 80%;
     font-size: 18px;
     line-height: 30px;
+    margin-left: -18px;
     text-align: center;
+    color:  white;
   }
 
   #btn {
@@ -215,7 +219,9 @@ footer {
   }
 }
 
-/* Media Query: Desktop  */
+
+/*  Media Query: Desktop  */
+
 @media screen and (min-width: 721px) {
   #parent {
     display: flex;
@@ -248,4 +254,3 @@ footer {
     color: white;
   }
 }
-
