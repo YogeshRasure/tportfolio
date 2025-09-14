@@ -15,7 +15,7 @@ header {
   align-items: center;
   font-size: 25px;
   margin-top: 2px;
-  height: 60px;
+  height: 60rem;
   display: flex;
   background-color: rgba(8, 29, 52, 0.778);
   border-radius: 5px;
@@ -51,7 +51,7 @@ nav a {
 #information {
   font-size: 30px;
   line-height: 40px;
-  margin-left: 80px;
+  margin-left: 80rem;
   text-align: justify;
   animation: about-animation 3s 1;
 }
@@ -67,7 +67,7 @@ nav a {
 
 #profilePic {
   width: 45%;
-  padding-left: 370px;
+  padding-left: 370rem;
   animation: zoomInZoomOut 3.2s ease-in-out 1;
 }
 
@@ -95,7 +95,7 @@ nav a {
 /* Button sections */
 #btn {
   width: 100%;
-  margin-top: -20px;
+  margin-top: -20rem;
   display: flex;
 }
 
@@ -248,3 +248,4 @@ footer {
     color: white;
   }
 }
+
