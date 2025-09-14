@@ -139,7 +139,7 @@ footer {
 }
 
 /* NEW: Mobile Menu Icon */
-#mobile-menu {
+.dropdown {
   display: none; /* hidden by default */
   padding: 10px;
   color: white;
@@ -149,9 +149,9 @@ footer {
   cursor: pointer;
 }
 
-
-/* k Media Query: Mobile  */
-
+/* ======================= */
+/* ✅ Media Query: Mobile  */
+/* ======================= */
 @media screen and (max-width: 720px) {
   /* Hide desktop header and footer */
   header,
@@ -159,16 +159,59 @@ footer {
     display: none;
   }
 
-  /* Show mobile menu icon */
-  #mobile-menu {
-    display: block;
-  }
+  
+.dropdown {
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropbtn {
+  background-color: #ff9800;
+  color: white;
+  /* padding: 12px 20px; */
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/*this the list of dropdown*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 115px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+  border-radius: 6px;
+  z-index: 1;
+  margin-left: 70%;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
   #hName,
   nav {
     display: none;
   }
 
+  /* Stack profilePic above information */
   #parent {
     display: flex;
     flex-direction: column;
@@ -209,9 +252,9 @@ footer {
   #btn_container {
     display: flex;
     gap: 20px;
-    width: 50%;
+    width: 100%;
     justify-content: center;
-    margin-left: -30px;
+    margin-left: 0px;
   }
 
   .simg {
@@ -219,9 +262,9 @@ footer {
   }
 }
 
-
-/*  Media Query: Desktop  */
-
+/* ======================== */
+/* ✅ Media Query: Desktop  */
+/* ======================== */
 @media screen and (min-width: 721px) {
   #parent {
     display: flex;
