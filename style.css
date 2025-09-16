@@ -264,46 +264,7 @@ footer {
   .simg {
     display: none;
   }
-}
 
-/* ======================== */
-/* ✅ Media Query: Desktop  */
-/* ======================== */
-@media screen and (min-width: 721px) {
-  #parent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 30px;
-  }
-
-  #profilePic {
-    order: -1;
-    width: 100%;
-    padding-left: 0;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-
-  #img {
-    height: 200px;
-    width: 200px;
-  }
-
-  #information {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0 20px;
-    text-align: center;
-    width: 55%;
-    color: white;
-  }
-}
-
-
-/*following are the styling of about tab*/
 .about-tab{
     animation-duration: 20s;
 
@@ -484,3 +445,46 @@ tr,th,td{
    color: rgb(247, 113, 4);
 
 }
+
+
+  
+}
+
+/* ======================== */
+/* ✅ Media Query: Desktop  */
+/* ======================== */
+@media screen and (min-width: 721px) {
+  #parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+  #profilePic {
+    order: -1;
+    width: 100%;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  #img {
+    height: 200px;
+    width: 200px;
+  }
+
+  #information {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 20px;
+    text-align: center;
+    width: 55%;
+    color: white;
+  }
+}
+
+
+/*following are the styling of about tab*/
