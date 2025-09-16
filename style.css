@@ -301,3 +301,186 @@ footer {
     color: white;
   }
 }
+
+
+/*following are the styling of about tab*/
+.about-tab{
+    animation-duration: 20s;
+
+
+  animation: about-animation 3s;
+  
+   animation-iteration-count: 1; 
+
+}
+
+
+@keyframes about-animation {
+  0% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+
+
+
+section{
+    height: 100%;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5%;
+    line-height: 40px;
+    width: 85%;
+    color: rgb(226, 225, 222);
+    box-shadow: 2px 2px 5px rgb(132, 121, 121);
+    margin-left: 20px;
+   
+}
+
+  @media (max-width: 380px) {
+  section{
+    
+    margin-left: 12px;
+    text-align: justify;
+    margin-top: 100px;
+    
+    
+
+
+  }
+}
+
+
+.education{
+height: 80%;
+margin-top: 50px;
+margin-left: 15px;
+
+
+
+   
+}
+
+table, th, td {
+  border: 1px solid rgb(252, 244, 244);
+}
+tr,th,td{
+  /* padding: 20px; */
+}
+
+  @media (max-width: 380px) {
+  .education-row {
+    width: 30%;
+ 
+    margin-left: 0px;
+    font-size: 15px;
+  
+    
+
+  }
+ .education-info{
+  text-align: center;
+  display: inline;
+  width: 40%;
+  margin-left: -200px;
+ }
+ table{
+  width: 10%;
+ }
+ 
+}
+
+
+
+
+.Skills{
+    height: 100%;
+    margin-top: 50px;
+    
+ 
+}
+.sbox{
+    
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    row-gap: 35px;
+    font-size: 22px;
+    column-gap: 40px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+  @media (max-width: 380px) {
+  .sbox {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 35px;
+    width: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 412px) {
+  .sbox {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 35px;
+    width: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+  }
+}
+
+
+.l_box{
+    height: 340px;
+    width: 300px; 
+   
+    border-radius: 40px;
+    border:2px solid rgb(83, 187, 252);
+    box-shadow: 1px 1px 10px  rgb(224, 85, 240),-1px -1px 15px  rgb(224, 85, 240);
+
+}
+
+
+.l_box_image{
+    height: 150px;
+    width: 220px;
+    padding: 5px;
+ 
+}
+
+.P_text{
+  font-size: 25px;
+  color: rgb(241, 155, 102);
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.check_project_button{
+    margin-top: 50px;
+    color: wheat;
+  height: 50px;
+   
+    padding: 10px;
+    border-radius: 40px;
+    border: 2px solid rgb(249, 244, 244);
+    background-color: rgba(253, 253, 253, 0.099);
+  
+}
+
+#show_PBtn{
+   padding: 20px;
+   font-size: 25px;
+   color: rgb(247, 113, 4);
+
+}
