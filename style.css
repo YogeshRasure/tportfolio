@@ -302,7 +302,7 @@ section{
    
 }
 
-  @media (max-width: 380px) {
+
   section{
     
     margin-left: 12px;
@@ -313,7 +313,7 @@ section{
 
 
   }
-}
+
 
 
 .education{
@@ -333,7 +333,7 @@ tr,th,td{
   /* padding: 20px; */
 }
 
-  @media (max-width: 380px) {
+
   .education-row {
     width: 30%;
  
@@ -353,7 +353,7 @@ tr,th,td{
   width: 10%;
  }
  
-}
+
 
 
 
@@ -376,19 +376,7 @@ tr,th,td{
     padding: 10px;
     width: 100%;
 }
-  @media (max-width: 380px) {
-  .sbox {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    row-gap: 35px;
-    width: 100%;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-  }
-}
 
-@media (max-width: 412px) {
   .sbox {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -398,7 +386,19 @@ tr,th,td{
     top: 0;
     left: 0;
   }
-}
+
+
+
+  .sbox {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 35px;
+    width: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+  }
+
 
 
 .l_box{
@@ -488,3 +488,4 @@ tr,th,td{
 
 
 /*following are the styling of about tab*/
+
